@@ -2,9 +2,6 @@
 # You want to share it with your colleagues, and would like to turn this script
 # into a function.
 
-# Take some time to briefly review the code below. Then, open the
-# `02_gini_function.R` file.
-
 # Load data ---------------------------------------------------------------
 
 df <- read.csv("data-raw/microdata.csv", stringsAsFactors = FALSE)
