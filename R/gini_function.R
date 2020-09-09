@@ -1,3 +1,20 @@
+#' compute_gini
+#' Computes gini coefficient
+#'
+#' @param df data.frame: Data frame containing variables for the gini computation
+#' @param welfare_col character: Name of welfare column
+#' For instance, income.
+#' @param weight_col character: Name of weight column. In case each observation
+#' represents a different proportion of the overall population
+#'
+#' @return numeric
+#' @export
+#'
+#' @examples
+#' welfare <- c(1, 5, 100)
+#' weight <- c(.5, .3, .2)
+#' df <- data.frame(welfare = welfare, weight = weight)
+#' compute_gini(df)
 compute_gini <- function(df,
                          welfare_col = "welfare",
                          weight_col  = "weight") {
@@ -20,3 +37,4 @@ compute_gini <- function(df,
 
   return(gini)
 }
+
